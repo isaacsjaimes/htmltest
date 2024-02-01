@@ -17,13 +17,21 @@ h2{
     margin-bottom: 0.5rem;
 }
 
-div{
+section{
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #fff;
     border-radius: 0.5rem;
     width: 90%;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .soy{
@@ -42,6 +50,12 @@ form{
 #habilidades{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+  
+#habilidades div {
+    flex: 1;
 }
 
 #tech{
@@ -56,11 +70,12 @@ form{
 }
 
 input{
-    width: 80vw;
+    width: 85vw;
     font-size: 1rem;
     background-color: hsl(0, 0%, 95%);
     border: none;
     padding: 0.2rem 1rem;
+    margin: 0.2rem;
     border-radius: 2rem;
 }
 
@@ -73,4 +88,37 @@ button{
     cursor: pointer;
     padding: 0.2rem 1rem;
     border-radius: 2rem;
+    margin: 0.5rem;
+}
+
+button:hover{
+    background-color: hsl(0, 0%, 100%);
+}
+
+img{
+    height: 200px;
+    width: auto;
+}
+
+img:hover{
+    transform: scale(1.1);
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    text-align: center;
+}
+
+#activitiesContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+  
+#activitiesContainer div {
+    flex: 1;
 }
